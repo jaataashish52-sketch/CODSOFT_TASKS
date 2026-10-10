@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aashish | Web Developer Portfolio</title>
+    <meta name="description" content="Aashish's personal web development portfolio.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <span>&lt;/&gt;</span> AASHISH
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="button nav-button" href="#contact">Hire Me ↗</a>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">I'M A WEB DEVELOPER</span>
+
+                <h1>Hi, I'm <span>Aashish</span></h1>
+                <h2>I build things for the web.</h2>
+
+                <p>
+                    I'm a student and aspiring web developer who enjoys
+                    creating modern websites and learning new technologies.
+                    I turn ideas into clean and user-friendly experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="button">View My Work ↗</a>
+                    <a href="#resume" class="button button-outline">
+                        Download CV ↓
+                    </a>
+                </div>
+
+                <div class="tech-strip">
+                    <p>TECHNOLOGIES I WORK WITH</p>
+                    <div class="tech-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JS</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="photo-glow"></div>
+
+                <!-- Put your photo in this folder as profile.jpg -->
+                <img
+                    class="profile-photo"
+                    src="profile.jpeg"
+                    alt="Aashish, web developer"
+                >
+
+                <div class="code-card">
+                    <div class="code-card-top">
+                        <span>&lt;/&gt; Code</span>
+                        <span class="status-dot">●</span>
+                    </div>
+                    <pre><code>const developer = {
+  name: "Aashish",
+  skills: ["HTML", "CSS"],
+  learning: "JavaScript"
+};</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about section" id="about">
+            <div class="about-text">
+                <span class="eyebrow">ABOUT ME</span>
+                <h2>I'm passionate about<br>creating digital solutions</h2>
+
+                <p>
+                    I'm learning web development and building projects
+                    to improve my coding, design and problem-solving skills.
+                    My goal is to create useful and attractive websites.
+                </p>
+
+                <a href="#contact" class="button button-outline">
+                    Let's Connect ↗
+                </a>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat">
+                    <span class="stat-icon">⌘</span>
+                    <div>
+                        <h3>03</h3>
+                        <p>Internship Projects</p>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <span class="stat-icon">&lt;/&gt;</span>
+                    <div>
+                        <h3>HTML & CSS</h3>
+                        <p>Current Focus</p>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <span class="stat-icon">✦</span>
+                    <div>
+                        <h3>Always</h3>
+                        <p>Learning New Skills</p>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <span class="stat-icon">✓</span>
+                    <div>
+                        <h3>100%</h3>
+                        <p>Commitment to Learning</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="section skills-section" id="skills">
+            <div class="section-heading">
+                <span class="eyebrow">MY SKILLS</span>
+                <h2>Technologies I Work With</h2>
+                <p>Tools I'm learning and using in my projects.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>HTML5</span><span>Learning</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" style="--level: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>CSS3</span><span>Learning</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" style="--level: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>JavaScript</span><span>Learning</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" style="--level: 30%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Responsive Design</span><span>Learning</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" style="--level: 45%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Git & GitHub</span><span>To Learn</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" style="--level: 15%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Problem Solving</span><span>Developing</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" style="--level: 35%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="section projects-section" id="projects">
+            <div class="section-heading">
+                <span class="eyebrow">FEATURED PROJECTS</span>
+                <h2>Some of My Recent Work</h2>
+                <p>Projects I'm building during my web development journey.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-preview preview-one">
+                        <span>01 / PORTFOLIO</span>
+                        <div class="preview-window">
+                            <span></span><span></span><span></span>
+                            <div class="preview-line"></div>
+                            <div class="preview-line short"></div>
+                            <div class="preview-block"></div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Personal Portfolio</h3>
+                        <p>A website showcasing my skills and introduction.</p>
+                        <span class="project-tech">HTML · CSS</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview preview-two">
+                        <span>02 / LANDING PAGE</span>
+                        <div class="preview-window landing-preview">
+                            <div class="preview-line"></div>
+                            <div class="preview-line short"></div>
+                            <div class="preview-block"></div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Landing Page</h3>
+                        <p>A modern, responsive landing page design.</p>
+                        <span class="project-tech">HTML · CSS</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview preview-three">
+                        <span>03 / CALCULATOR</span>
+                        <div class="mini-calculator">
+                            <div>125 + 25</div>
+                            <div class="mini-keys">
+                                <i>7</i><i>8</i><i>9</i><i>÷</i>
+                                <i>4</i><i>5</i><i>6</i><i>×</i>
+                                <i>1</i><i>2</i><i>3</i><i>+</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Calculator App</h3>
+                        <p>A calculator with interactive number buttons.</p>
+                        <span class="project-tech">HTML · CSS · JS</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- RESUME SECTION -->
+        <section class="section resume-section" id="resume">
+            <div>
+                <span class="eyebrow">MY RESUME</span>
+                <h2>Want to know more about me?</h2>
+                <p>Add your own resume PDF to download it from here.</p>
+            </div>
+
+            <a class="button" href="resume.pdf" download>
+                Download Resume ↓
+            </a>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section contact-section" id="contact">
+            <div class="contact-copy">
+                <span class="eyebrow">LET'S WORK TOGETHER</span>
+                <h2>Have a project in mind?</h2>
+                <p>
+                    I'm learning, building and improving every day.
+                    Feel free to contact me about web development.
+                </p>
+                <a class="button"
+                   href="mailto:jaatashish52@gmail.com">
+                    Get In Touch ↗
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <h3>Contact Details</h3>
+                <p>
+                    <span>Email</span>
+                    <a href="mailto:jaatashish52@gmail.com">
+                        jaatashish52@gmail.com
+                    </a>
+                </p>
+                <p>
+                    <span>Mobile</span>
+                    <a href="tel:7425925721">7425925721</a>
+                </p>
+                <p>
+                    <span>Location</span>
+                    <span>India</span>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Aashish. All rights reserved.</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Background */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #87c8e8;
+  font-family: Arial, sans-serif;
+}
+
+/* Calculator Box */
+.calculator {
+  width: 247px;
+  padding: 17px 18px;
+  background: #000000;
+  border-radius: 7px;
+}
+
+/* Display Screen */
+#display {
+  width: 100%;
+  height: 52px;
+  margin-bottom: 7px;
+  padding: 0 0 0 5px;
+  border: none;
+  outline: none;
+  background: #000000;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: right;
+}
+
+/* Button Layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+}
+
+/* All Buttons */
+button {
+  width: 100%;
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 50%;
+  background: #303030;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  touch-action: manipulation;
+}
+
+/* Hover Effect */
+button:hover {
+  filter: brightness(1.2);
+}
+
+/* Click Effect */
+button:active {
+  transform: scale(0.94);
+}
+
+/* AC and DEL Buttons */
+.utility {
+  background: #aaaaaa;
+  color: #111111;
+}
+
+/* Operator Buttons */
+.operator,
+.equals {
+  background: #ff9800;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* Zero Button */
+.zero {
+  grid-column: span 2;
+  aspect-ratio: auto;
+  border-radius: 35px;
+}
+
+/* Error Message */
+#message {
+  min-height: 0;
+  margin-top: 0;
+  color: #ff7777;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Small Screens */
+@media (max-width: 280px) {
+  .calculator {
+    width: 95vw;
+    padding: 12px;
+  }
+
+  .buttons {
+    gap: 6px;
+  }
+}
